@@ -1,0 +1,23 @@
+<div class="card-frame">
+  <%= link_to project_path(project) do %>
+    <article class="card">
+      <div class="card-body">
+        <div class="card-title">       <%= project.title  %>       </div>
+        <div class="card-description"> <%= project.description  %> </div>
+      </div>
+      <div class="card-hero">
+        <div class="card-image">
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="card-category">
+          <%= project.category  %>
+        </div>
+        <div class="card-tags">
+          <%= project.tags.pluck(:name).join(', ')  %>
+        </div>
+      </div>
+
+    </article>
+  <% end %>
+</div>

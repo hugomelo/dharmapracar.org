@@ -30,4 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: 'Dharma Pracar Projects'
+  header:
+    home: 'Home'
+    contact: 'Contact'
+  contact_page: "Contact Page"
+  home:
+    h1: 'Dharma pracar projects around the world'
+    h2: 'If you have one and would like to share, please send us!' 
+    share: 'share it!'

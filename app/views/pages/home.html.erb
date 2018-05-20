@@ -1,0 +1,8 @@
+<div class="container">
+
+  <h1><%= t('home.h1') %></h1>
+  <h2><%= t('home.h2') %></h2>
+  <div class='share'><%= link_to t('home.share'), new_project_path %></div>
+
+  <%= render 'projects/cards', projects: @projects %>
+</div>

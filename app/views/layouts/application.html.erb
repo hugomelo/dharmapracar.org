@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DharmaPracarProjects</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ua-119603417-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119603417-1');
+    </script>
+
+    <title>Dharma Pracar Projects</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+    <meta name="description" content="A showcase of dharma pracar projects around the world!" />
+    <meta name="author" content="Global Dharma Pracar Movement">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <header class='navbar'>
+      <div class="title">
+        <%= t('title')  %>
+      </div>
+      <ul>
+        <li class='nav-item'>
+          <%= link_to 'Home', root_path %>
+        </li>
+        <li class='nav-item'>
+          <%= link_to t('header.contact'), contact_path %>
+        </li>
+      </ul>
+    </header>
+
+    <main role="main">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+    </main>
+
+    <footer>
+      <p> Copyright © 2018 Global Dharma Pracar Movement </p>
+    </footer>
   </body>
 </html>
