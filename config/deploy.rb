@@ -2,7 +2,7 @@
 lock "~> 3.10.2"
 
 set :application, "dharmapracar.org"
-set :repo_url, "git@github.com:hugomelo/dharmapracar.org.git"
+set :repo_url, "https://github.com/hugomelo/dharmapracar.org.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
