@@ -26,7 +26,7 @@ set :deploy_to, "/var/www/dharmapracar/dharmapracar.org"
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/database.yml', '.env', '.env.production'
+append :linked_files, 'config/database.yml', '.env', '.env.production', 'config/master.key'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -54,7 +54,7 @@ set :assets_roles, [:web, :app]
 
 # Defaults to 'assets'
 # This should match config.assets.prefix in your rails config/application.rb
-set :assets_prefix, 'prepackaged-assets'
+#set :assets_prefix, 'prepackaged-assets'
 
 # RAILS_GROUPS env value for the assets:precompile task. Default to nil.
 set :rails_assets_groups, :assets
